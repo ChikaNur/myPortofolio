@@ -18,7 +18,7 @@ const Experience: React.FC = () => {
         : EXPERIENCES.filter(exp => exp.type === selectedType);
 
     return (
-        <section id="experience" className="py-20 bg-gray-50">
+        <section id="experience" className="py-12 md:py-20 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-serif font-bold text-pastel-text mb-8 text-center">
                     Experience & Organization
@@ -31,8 +31,8 @@ const Experience: React.FC = () => {
                             key={type}
                             onClick={() => setSelectedType(type)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${selectedType === type
-                                    ? 'bg-pastel-dark text-white shadow-md'
-                                    : 'bg-white text-gray-600 border border-pastel-light hover:border-pastel-dark hover:text-pastel-dark'
+                                ? 'bg-pastel-dark text-white shadow-md'
+                                : 'bg-white text-gray-600 border border-pastel-light hover:border-pastel-dark hover:text-pastel-dark'
                                 }`}
                         >
                             {type}
@@ -49,8 +49,8 @@ const Experience: React.FC = () => {
                                     <p className="text-pastel-dark font-medium">{exp.company}</p>
                                 </div>
                                 <span className={`text-xs px-2 py-1 rounded text-white ${exp.type === 'Work' ? 'bg-blue-400' :
-                                        exp.type === 'Event' ? 'bg-purple-400' :
-                                            exp.type === 'Volunteering' ? 'bg-green-400' : 'bg-pastel-dark'
+                                    exp.type === 'Event' ? 'bg-purple-400' :
+                                        exp.type === 'Volunteering' ? 'bg-green-400' : 'bg-pastel-dark'
                                     }`}>
                                     {exp.type}
                                 </span>

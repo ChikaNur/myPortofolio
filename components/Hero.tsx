@@ -6,13 +6,13 @@ const Hero: React.FC = () => {
 
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-[length:400%_400%] animate-gradient-slow bg-gradient-to-br from-pastel-light via-pastel to-[#D9BCC3] pt-16">
+    <section id="home" className="min-h-[100dvh] flex items-center justify-center bg-[length:400%_400%] animate-gradient-slow bg-gradient-to-br from-pastel-light via-pastel to-[#D9BCC3] pt-24 md:pt-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1 text-center md:text-left space-y-6 animate-fade-in-up">
           <div className="inline-block px-4 py-1 rounded-full bg-white/50 border border-pastel-dark text-pastel-dark text-sm font-semibold mb-4">
             Portfolio
           </div>
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-pastel-text leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-pastel-text leading-tight">
             Hello, I'm <br />
             <span className="text-pastel-dark">{PROFILE.name}</span>
           </h1>
