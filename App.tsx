@@ -9,6 +9,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import RevealOnScroll from './components/RevealOnScroll';
+import InstagramGallery from './components/InstagramGallery';
+import { INSTAGRAM_POSTS } from './constants';
 
 const App: React.FC = () => {
   return (
@@ -16,25 +18,29 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
-        
+
         <RevealOnScroll>
           <About />
         </RevealOnScroll>
-        
+
         <RevealOnScroll>
           <Experience />
         </RevealOnScroll>
-        
+
         <RevealOnScroll>
           <Education />
         </RevealOnScroll>
-        
+
         <RevealOnScroll>
           <Skills />
         </RevealOnScroll>
 
         <RevealOnScroll>
           <Projects />
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <InstagramGallery posts={INSTAGRAM_POSTS} />
         </RevealOnScroll>
 
         <RevealOnScroll>
